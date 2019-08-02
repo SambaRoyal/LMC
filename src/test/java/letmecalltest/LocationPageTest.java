@@ -35,6 +35,7 @@ public class LocationPageTest extends TestBase{
 			location.searchbox.sendKeys("LB nagar");
 			location.searchbox.sendKeys(Keys.ARROW_DOWN);
 			location.searchbox.sendKeys(Keys.ENTER);
+			Thread.sleep(2000);
 			driver.close();
 		} catch (Exception e) {
 			e.printStackTrace();
