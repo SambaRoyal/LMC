@@ -49,8 +49,8 @@ public class TestUtil extends TestBase {
 	  
    }
    public void clickElement1(WebElement element) {
-		WebDriverWait wait = new WebDriverWait(driver , 1000) ;
-		wait.until(ExpectedConditions.elementToBeClickable(element));
+		WebDriverWait wait = new WebDriverWait(driver ,1000) ;
+        wait.until(ExpectedConditions.elementToBeClickable(element));
    }
    public void inputtext(WebElement element ,String text) {
 		WebDriverWait wait = new WebDriverWait(driver , 1000) ;

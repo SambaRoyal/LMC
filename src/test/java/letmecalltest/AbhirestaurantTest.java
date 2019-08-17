@@ -21,32 +21,23 @@ import test_pages.RestarentPage;
 import test_util.TestUtil;
 
 public class AbhirestaurantTest extends TestBase {
-	RestarentPage restrent;
-	Abhi abhi;
-	LoginPage login;
-	LocationPage locate;
-	AddressPage address;
+	public RestarentPage restrent;
+	public Abhi abhi;
+	public LoginPage login;
+	public LocationPage locate;
+	public AddressPage address;
 	
-	private void setup(WebDriver driver) throws Exception                       {
-		initialization();
-		launch_browser(prop.getProperty("loginUrl"));
-	}
 	
 	@Test(groups= {"samba"})
 	public void loginTest() throws Exception {
 		try {
 			initialization();
 			launch_browser(prop.getProperty("loginUrl"));
-		//	login = new LoginPage(driver);
-			AbhirestaurantTest abhi=new AbhirestaurantTest();
-			login.loginClick();
-			login.Username();
-			login.PWD();
-			login.Login();
 			TestUtil util=new TestUtil();
 			Abhi abhi1 = new Abhi(driver);
-			/*util.clickElement1(LoginPage.login_link);*/
-	//		WebDriverWait wait = new WebDriverWait(driver , 1000) ;
+			login=new LoginPage(driver);
+        	login.loginClick();
+			//util.clickElement1(LoginPage.login_link);
 			util.inputtext(LoginPage.log_username,prop.getProperty("log_Email"));
 			Reporter.log("Entered email address",true);
 			util.inputtext(LoginPage.log_password, prop.getProperty("log_password"));
@@ -77,7 +68,8 @@ public class AbhirestaurantTest extends TestBase {
 		try {
 			TestUtil util=new TestUtil();
 			AbhirestaurantTest abhi=new AbhirestaurantTest();
-			abhi.setup(driver);
+			initialization();
+			launch_browser(prop.getProperty("loginUrl"));
 			restrent = new RestarentPage(driver);
 			Abhi abhi1 = new Abhi(driver);
 			util.clickElement1(RestarentPage.abhiRestaurant);

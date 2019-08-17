@@ -11,9 +11,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 
-import com.relevantcodes.extentreports.ExtentReports;
-import com.relevantcodes.extentreports.ExtentTest;
-import com.relevantcodes.extentreports.LogStatus;
 
 import test_util.TestUtil;
 
@@ -25,14 +22,14 @@ public class TestBase {
 		prop = new Properties();
 
 		FileInputStream file = new FileInputStream(
-				"C:\\Testing master\\letmecall_1\\src\\main\\java\\configure\\configure_property");
+				"C:\\Eclipse\\LETMECALL_AUTOMATION\\src\\main\\java\\configure\\configure_property");
 		prop.load(file);
 
 	}
 
 	public void launch_browser(String url) {
 		System.setProperty("webdriver.chrome.driver",
-				"C:\\Testing master\\letmecall_1\\browser_Driver\\chromedriver.exe");
+				"C:\\Eclipse\\LETMECALL_AUTOMATION\\browser_Driver\\chromedriver.exe");
 		// System.getProperty("user.dir") + "//browser_Driver//chromedriver.exe");
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();

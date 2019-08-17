@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite">
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="letmecalltest.LoginPageTest"/>
-      <class name="letmecalltest.MyOrderPageTest"/>
-      <class name="letmecalltest.LocationPageTest"/>
-      <class name="letmecalltest.RegisterPageTest"/>
-      <class name="letmecalltest.ProfilePageTest"/>
-      <class name="letmecalltest.AbhirestaurantTest"/>
-    </classes>
-  </test> <!-- Test -->
+	<test thread-count="5" name="Test">
+
+		<classes>
+
+			<class name="letmecalltest.LoginPageTest" />
+			<class name="letmecalltest.MyOrderPageTest" />
+			<class name="letmecalltest.LocationPageTest" />
+			<class name="letmecalltest.RegisterPageTest" />
+			<class name="letmecalltest.ProfilePageTest" />
+			<class name="letmecalltest.AbhirestaurantTest" />
+			
+		</classes>
+		
+	</test> <!-- Test -->
 </suite> <!-- Suite -->

@@ -1,41 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
   <reporter-output>
-    <line>
-      <![CDATA[login link click]]>
-    </line>
-    <line>
-      <![CDATA[Enter User name]]>
-    </line>
-    <line>
-      <![CDATA[Enter password]]>
-    </line>
-    <line>
-      <![CDATA[login click]]>
-    </line>
   </reporter-output>
-  <suite started-at="2019-07-22T11:31:15Z" name="Default suite" finished-at="2019-07-22T11:31:42Z" duration-ms="27332">
+  <suite started-at="2019-08-17T20:51:42 IST" name="Suite" finished-at="2019-08-17T20:53:00 IST" duration-ms="77538">
     <groups>
+      <group name="samba">
+        <method signature="AbhirestaurantTest.loginTest()[pri:0, instance:letmecalltest.AbhirestaurantTest@60dcc9fe]" name="loginTest" class="letmecalltest.AbhirestaurantTest"/>
+      </group> <!-- samba -->
     </groups>
-    <test started-at="2019-07-22T11:31:15Z" name="Default test" finished-at="2019-07-22T11:31:42Z" duration-ms="27332">
-      <class name="letmecalltest.LocationPageTest">
-        <test-method signature="LocationTest()[pri:0, instance:letmecalltest.LocationPageTest@385e9564]" started-at="2019-07-22T17:01:15Z" name="LocationTest" finished-at="2019-07-22T17:01:42Z" duration-ms="27307" status="PASS">
+    <test started-at="2019-08-17T20:51:42 IST" name="Test" finished-at="2019-08-17T20:53:00 IST" duration-ms="77538">
+      <class name="letmecalltest.AbhirestaurantTest">
+        <test-method signature="loginTest()[pri:0, instance:letmecalltest.AbhirestaurantTest@60dcc9fe]" started-at="2019-08-17T20:51:42 IST" name="loginTest" finished-at="2019-08-17T20:53:00 IST" duration-ms="77478" status="PASS">
           <reporter-output>
-            <line>
-              <![CDATA[login link click]]>
-            </line>
-            <line>
-              <![CDATA[Enter User name]]>
-            </line>
-            <line>
-              <![CDATA[Enter password]]>
-            </line>
-            <line>
-              <![CDATA[login click]]>
-            </line>
           </reporter-output>
-        </test-method> <!-- LocationTest -->
-      </class> <!-- letmecalltest.LocationPageTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- loginTest -->
+      </class> <!-- letmecalltest.AbhirestaurantTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
